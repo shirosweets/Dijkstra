@@ -1,0 +1,30 @@
+				Laboratorio 6: "Algoritmo de Dijkstra"
+➢ Materia: Algoritmos y estructura de datos II
+➢ Fecha máxima de entrega: 08/06/2020 - 23:59:59
+➢ Alumna: Valentina Solange, Vispo
+➢ Comisión: Jueves
+➢ Link de entrega: https://forms.gle/V7zy3CRWpqVs3KXZA
+➢ Link de descarga: https://wiki.cs.famaf.unc.edu.ar/lib/exe/fetch.php?media=algo2:main:lab06-dijkstra.zip
+---------------------------------------------------------------------------------------------------------------------
+			*** COMANDOS PARA CORRER  EL PROGRAMA CON MAKEFILE***
+
+make
+valgrind --show-reachable=yes --leak-check=full ./dijkstra input/example_graph_1.in
+
+		   *** COMANDOS PARA CORRER  EL PROGRAMA (MEMORY LEAKS CON MAKEFILE)***
+
+make
+valgrind --show-reachable=yes --leak-check=full ./dijkstra input/example_graph_1.in
+
+---------------------------------------------------------------------------------------------------------------------
+					*** Comentarios ***
+
+➢ Agregué la función cost_res (subtraction) operation.
+➢ Agregué la función cost_eq (equal relation).
+➢ make clean está en makefiles, elimina los ficheros creados (.o) junto con el programa (all).
+➢ Creé la función auxiliar cost_t cost_min(cost_t costo1, cost_t costo2) que devuelve el costo mínimo entre dos costos (si son iguales devuelve el primero).
+➢ En los cuatro ejemplos no encontré errores de memory leaks.
+➢ Adjunté todos los archivos modificados.
+
+				       *** Fin comentarios ***
+---------------------------------------------------------------------------------------------------------------------
